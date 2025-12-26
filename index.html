@@ -1,15 +1,125 @@
-A responsive, single-page website for a sun-themed restaurant. The website will feature sections for the menu, about us, gallery, and contact information, with a clean and modern design.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sunstone Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">The Sunstone</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.
-├── index.html
-├── css
-│   └── style.css
-├── js
-│   └── script.js
-└── images
-    ├── hero-background.jpg
-    ├── menu-item-1.jpg
-    ├── menu-item-2.jpg
-    ├── gallery-1.jpg
-    ├── gallery-2.jpg
-    └── gallery-3.jpg
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Taste the Warmth of the Sun</h1>
+            <p>Experience exquisite dishes inspired by the sun's vibrant energy.</p>
+            <a href="#menu" class="btn">View Our Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Menu Highlights</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/menu-item-1.jpg" alt="Dish 1">
+                    <h3>Solar Salmon</h3>
+                    <p>Grilled salmon with lemon-dill sauce and roasted asparagus.</p>
+                    <span class="price">$24.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/menu-item-2.jpg" alt="Dish 2">
+                    <h3>Sun-Kissed Chicken</h3>
+                    <p>Marinated grilled chicken breast with a side of quinoa salad.</p>
+                    <span class="price">$19.99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="images/menu-item-1.jpg" alt="Dish 3">
+                    <h3>Golden Harvest Salad</h3>
+                    <p>Mixed greens with sun-dried tomatoes, feta cheese, and a balsamic glaze.</p>
+                    <span class="price">$14.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About The Sunstone</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/hero-background.jpg" alt="Restaurant Interior">
+                </div>
+                <div class="about-text">
+                    <p>Nestled in the heart of the city, The Sunstone Restaurant is a culinary oasis dedicated to bringing you the finest dining experience. Our inspiration comes from the life-giving warmth and vibrant colors of the sun, reflected in our fresh, seasonal ingredients and artfully prepared dishes.</p>
+                    <p>We believe in creating a welcoming atmosphere where friends and family can gather to enjoy delicious food and create lasting memories. From casual lunches to intimate dinners, we invite you to discover the radiant flavors of The Sunstone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-images">
+                <img src="images/gallery-1.jpg" alt="Gallery Image 1">
+                <img src="images/gallery-2.jpg" alt="Gallery Image 2">
+                <img src="images/gallery-3.jpg" alt="Gallery Image 3">
+                <img src="images/menu-item-1.jpg" alt="Gallery Image 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Visit Us or Get In Touch</h2>
+            <div class="contact-info">
+                <div class="address">
+                    <h3>Our Location</h3>
+                    <p>123 Sunbeam Lane<br>
+                       Radiant City, CA 90210</p>
+                </div>
+                <div class="phone">
+                    <h3>Call Us</h3>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class="hours">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 11:00 AM - 10:00 PM<br>
+                       Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 The Sunstone Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
